@@ -1,1 +1,41 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><title>hello-world</title><link href=/css/app.e2713bb0.css rel=preload as=style><link href=/js/app.4822e73b.js rel=preload as=script><link href=/js/chunk-vendors.1cc2a64c.js rel=preload as=script><link href=/css/app.e2713bb0.css rel=stylesheet></head><body><noscript><strong>We're sorry but hello-world doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.1cc2a64c.js></script><script src=/js/app.4822e73b.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #app {
+      width: 600px;
+      height: 600px;
+      margin: 10px auto;
+      position: relative;
+    }
+
+    span {
+      display: block;
+      position: absolute;
+      border-radius: 50%;
+      background-color: black;
+      left: 50%;
+      top: 50%;
+    }
+
+    span.light {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <p>圆环上有100个灯泡，有打开、关闭两种状态，灯泡的状态随机。</p>
+  <p>按一个灯泡，相邻的两个灯泡的状态会一起变化。</p>
+  <p>如暗-亮-暗，点击中间的亮灯泡，会变成亮-暗-亮</p>
+  <p>如何操作，<strong>使得所有灯泡都亮？</strong></p>
+  <button onclick="restart();">重新开始</button>
+  <label for="num">灯泡数</label>
+  <input type="number" name="num" id="num">
+  <div id="app"></div>
+  <script src="./index.js"></script>
+</body>
+</html>
