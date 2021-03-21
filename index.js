@@ -4,10 +4,17 @@ function random () {
 
 const inputVal = document.querySelector('input')
 
-inputVal.value = 4
+
+inputVal.addEventListener('keydown', e => {
+  if (e.key === 'Enter') {
+    restart()
+  }
+})
+
+inputVal.value = 10
 
 function restart () {
-  const n = inputVal.value || 100
+  const n = inputVal.value || 10
 
   const R = 200
 
